@@ -1,0 +1,25 @@
+.MobileMenuPosition{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#MobileThreeOptionMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    min-width: 92%;
+    margin: 5px !important;
+    height: 1em;
+    background-color: #FFFFFF;
+    padding: 10px;
+    min-height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 8px #888888;
+}
+
+.mobileMenuOptions{
+    font-size: 1.5em;
+}

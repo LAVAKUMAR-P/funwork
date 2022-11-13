@@ -7,7 +7,7 @@ function Footer(props) {
  let CustomStyle=_.get(props,"Customcss",{});
 
   return (
-    <div id='FooterDiv' style={CustomStyle}>Footer</div>
+    <div id='FooterDiv' style={CustomStyle}>&#169; Lavakumar (2022)</div>
   )
 }
 
