@@ -1,11 +1,9 @@
-#HomePageOverallDiv{
-    max-height: 100vh;
+.HomePageOverallDiv{
+    min-height: 100vh;
     max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: auto;
 }
 
-#HomePageOverallDiv h1{
-    max-height: 100vh;
-    max-width: 100vw;
-    overflow: hidden;
-}

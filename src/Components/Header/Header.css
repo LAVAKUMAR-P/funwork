@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+
+#HeaderDiv{
+    position: fixed;
+    top: 0px;
+    min-width: 100vw;
+    height: 1em;
+    background-color: #FFFFFF;
+    padding: 3px;
+    font-family: 'Calistoga', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2d0266;
+}

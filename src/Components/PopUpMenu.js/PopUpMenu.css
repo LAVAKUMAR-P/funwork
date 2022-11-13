@@ -1,0 +1,58 @@
+.PopUpMenuOverAlldiv{
+    min-height:100vh;
+    z-index: 2;
+    position: fixed;
+    min-width: 100vw;
+    background-color: rgba(134, 93, 231, 0.4);
+    overflow: hidden;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d0266;
+}
+
+.PopupModel{
+    background-color: #F3F2EF;
+    opacity: 1;
+    width: 300px;
+    height: max-content;
+    border-radius: 5px;
+    
+}
+
+.HeadingPopupMenu{
+    background-color: #ffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    margin: 5px;
+    color: #073ef3;
+}
+
+.PopupMenuOptions{
+    background-color: #ffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    margin: 5px;
+    align-items: center;
+    color: #2d0266;
+    cursor: pointer;
+}
+
+.CloseIcon{
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.PopupMenuOptions svg{
+    margin-right: 5px;
+}
+
+.PopupMenuOptions:hover{
+    color: green;
+}

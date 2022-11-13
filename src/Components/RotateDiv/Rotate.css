@@ -17,6 +17,10 @@
     text-transform: uppercase;
 }
 
+#MainMenu:hover {
+    color: green;
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {
       -webkit-transform: rotate(0deg);
@@ -53,6 +57,4 @@
     animation: rotating 5s linear infinite;
   }
 
-  #MainMenu:hover {
-    color: green;
-  }
+ 
