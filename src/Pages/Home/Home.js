@@ -5,6 +5,7 @@ function Home() {
   return (
     <>
       <div id='#HomePageOverallDiv'>
+     
         Home Page
 
           'logo' is defined but never used  no-unused-vars
@@ -151,9 +152,9 @@ function Home() {
           Line 4:8:  'MenuOptions' is assigned a value but never used  no-unused-vars
 
           webpack compiled with 1 warning
-         
+        
       </div>
-
+     
     </>
   )
 }

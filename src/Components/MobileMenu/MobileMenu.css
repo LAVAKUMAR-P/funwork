@@ -13,13 +13,30 @@
     min-width: 92%;
     margin: 5px !important;
     height: 1em;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 10px;
     min-height: 50px;
     border-radius: 5px;
     box-shadow: 5px 10px 8px 8px #888888;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
 }
 
 .mobileMenuOptions{
-    font-size: 1.5em;
+    font-size: 1.7em;
+    color: #4e02af;
+    /* width: max-content; */
+    padding: 5px;
+    transition:0.5s;
+    
+}
+
+.mobileMenuOptions:hover, .mobileMenuOptions:focus, .mobileMenuOptions:active{
+    color: green;
+   
+    z-index: 1;
+    transform: rotate(360deg);
+    
 }
