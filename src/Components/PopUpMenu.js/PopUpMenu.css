@@ -3,13 +3,13 @@
     z-index: 2;
     position: fixed;
     min-width: 100vw;
-    background-color: rgba(134, 93, 231, 0.4);
+    background-color: rgba(53, 3, 3, 0.4);
     overflow: hidden;
     bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #2d0266;
+    color: #7C0000;
 }
 
 .PopupModel{
@@ -28,7 +28,7 @@
     justify-content: space-between;
     height: max-content;
     margin: 5px;
-    color: #073ef3;
+    color: #531e1e;
 }
 
 .PopupMenuOptions{
@@ -39,7 +39,7 @@
     height: max-content;
     margin: 5px;
     align-items: center;
-    color: #2d0266;
+    color: #7C0000;
     cursor: pointer;
 }
 
@@ -54,5 +54,5 @@
 }
 
 .PopupMenuOptions:hover{
-    color: green;
+    color: #600000;
 }

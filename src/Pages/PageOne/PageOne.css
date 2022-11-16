@@ -1,0 +1,66 @@
+#Swapcard{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ImagebtnPosition{
+  padding: 10px;
+  min-width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 5em;
+    
+}
+
+/* // TWITTER HEART */
+.heart {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  /* position: absolute;
+  left: 50%;
+  top: 50%; */
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;  
+  cursor: pointer;
+  position: relative;
+  right: 40px;
+  
+}
+.heart-blast {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+.Lbtn{
+  border: none;
+  padding: 5px;
+  background-color: #8253e7;
+  margin: 5px;
+  font-size: medium;
+  border-radius: 5px;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}
+
+#Likebtn{
+  position: relative;
+  left: -130px;
+}
+
+#DisLikebtn{
+  position: relative;
+  position: relative;
+  right: 50px;
+}

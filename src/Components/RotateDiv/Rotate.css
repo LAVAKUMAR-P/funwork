@@ -12,13 +12,13 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     word-wrap: break-word;
-    color: #4e02af;
+    color: #7C0000;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 #MainMenu:hover {
-    color: green;
+    color: #660101;
 }
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {

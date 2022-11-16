@@ -26,7 +26,7 @@
 
 .mobileMenuOptions{
     font-size: 1.7em;
-    color: #4e02af;
+    color: #7C0000;
     /* width: max-content; */
     padding: 5px;
     transition:0.5s;
@@ -34,8 +34,7 @@
 }
 
 .mobileMenuOptions:hover, .mobileMenuOptions:focus, .mobileMenuOptions:active{
-    color: green;
-   
+    color: #a84d09;
     z-index: 1;
     transform: rotate(360deg);
     
