@@ -1,11 +1,14 @@
-import { createStore } from "redux";
+import { configureStore, createAsyncThunk } from "@reduxjs/toolkit";
+import thunk from "redux-thunk";
 import reducer from "./reducer";
 
 
-const store =createStore(
-    reducer,
-    {},
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const store =configureStore({
+    reducer: reducer,
+    middleware: [thunk],
+    devTools: true,
+}
+
 );
 
 export default store;

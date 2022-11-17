@@ -1,9 +1,13 @@
-const initialState={
-    products:["Hello"],
+const pictireState={
+    Allpictires:[],
+    LikedPicture:[],
+    DisLikedPicture:[],
+    MorePicture:[],
+    UpcomingPicture:[],
   };
   
   
-  export const PictureReducer=(state=initialState,{type,payload})=>{
+  export const PictureReducer=(state=pictireState,{type,payload})=>{
       switch(type){
           case "SET_PRODUCT":
               return{...state,products:payload};

@@ -1,5 +1,4 @@
 import React from 'react'
-import Cards from '../../Components/cards/Cards'
 import './Home.css'
 
 function Home() {
@@ -9,7 +8,7 @@ function Home() {
       <div className='HomePageOverallDiv'>
      
           
-      <Cards />
+      <h5>Home Page Under development</h5>
           
         
       </div>

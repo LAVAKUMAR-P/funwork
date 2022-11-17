@@ -11,9 +11,6 @@ function PageOne() {
       <div className='swapcardPosition'>
       <Cards/> 
       </div>
-       
-         
-      
     </div>
   )
 }
