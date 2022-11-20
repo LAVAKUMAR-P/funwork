@@ -11,13 +11,15 @@ import Header from './Components/Header/Header';
 import PageOne from './Pages/PageOne/PageOne';
 import PageTwo from './Pages/PageOne/PageTwo';
 import { useDispatch } from 'react-redux';
+import { SET_ALL_PICTURES } from './redux/action/PictureAction';
+import { SampleData } from './DevData/ConfigData';
 
 
 function App() {
   const [Menu, setMenu] = useState(false);
   const Dispatch=useDispatch()
   useEffect(() => {
-    
+    Dispatch(SET_ALL_PICTURES(SampleData))
   }, [])
   
   return (

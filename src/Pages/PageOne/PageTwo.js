@@ -1,8 +1,9 @@
 import React from 'react'
+import PieChart from '../../Components/Chart/PieChart'
 
 function PageTwo() {
   return (
-    <div className='HomePageOverallDiv'><h4>Dashboard Page</h4></div>
+    <div className='HomePageOverallDiv'><PieChart/></div>
   )
 }
 
