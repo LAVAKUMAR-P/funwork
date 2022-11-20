@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { useSelector } from 'react-redux';
@@ -8,13 +8,20 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 function PieChart() {
     const picState = useSelector(state => _.get(state,"PictureReducer",[{ AllPicture: [], LikedPicture: [], DisLikedPicture: [], MorePicture: [], UpcomingPicture: []}]));
-    console.log(picState);
+
+    const [AllpicData, setAllpicData] = useState(0);
+
+    useEffect(() => {
+      setAllpicData( _.get(picState,"AllPicture.length",0) - ( _.get(picState,"LikedPicture.length",0) + _.get(picState,"DisLikedPicture.length",0) +  _.get(picState,"MorePicture.length",0) + _.get(picState,"LovedPicture.length",0)))
+    }, [picState])
+    
+   
     const data = {
         labels: ['All picture', 'Liked', 'Dis Liked', 'Loved', 'More'],
         datasets: [
           {
             label: '# swaps',
-            data: [_.get(picState,"AllPicture.length",0), _.get(picState,"LikedPicture.length",0), _.get(picState,"DisLikedPicture.length",0), _.get(picState,"MorePicture.length",0), _.get(picState,"UpcomingPicture.length",0)],
+            data: [AllpicData, _.get(picState,"LikedPicture.length",0), _.get(picState,"DisLikedPicture.length",0), _.get(picState,"LovedPicture.length",0), _.get(picState,"MorePicture.length",0),],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',

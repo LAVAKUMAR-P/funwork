@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 function Header() {
   return (
-    <div id='HeaderDiv'>Find your favorite</div>
+    <div id='HeaderDiv'>Fun work (Web Components)</div>
   )
 }
 
